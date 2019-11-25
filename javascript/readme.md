@@ -1,5 +1,5 @@
 # Javascript
-* 基本数据类型
+* <a href="数据类型">基本数据类型</a>
 * this的指向
 * 闭包
 * 立即执行函数
@@ -10,7 +10,8 @@
 * Promise
 * 模块的导入导出
 
-> ## 数据类型
+
+> ## <a href="数据类型">数据类型</a>
 值类型(基本类型)：Boolean、Number、String、null、undefined、Symbol.
 
 引用类型：Object、Array、Function
