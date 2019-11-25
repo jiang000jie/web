@@ -27,7 +27,10 @@ function out(){
     function in(){
         console.log(num)    //10
     }
+    return in;
 }
+var t=out()
+t() //10
 </pre>
 
 > ## 事件循环
