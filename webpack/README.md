@@ -1,9 +1,9 @@
 # webpack
 
-* <a href="1">作用</a>
-* <a href="2">安装</a>
-* <a href="3">基本配置</a>
-* <a href="4">常用的插件</a>
+* <a href="#1">作用</a>
+* <a href="#2">安装</a>
+* <a href="#3">基本配置</a>
+* <a href="#4">常用的插件</a>
 
 
 > <span id="1">作用</span>
