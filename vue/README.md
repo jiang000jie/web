@@ -40,3 +40,50 @@ const app=new Vue({
 .middle - (2.2.0) 只当点击鼠标中键时触发。
 .passive - (2.3.0) 以 { passive: true } 模式添加侦听器
 
+> 组件的使用
+
+```
+<div id="app">
+    <div @click="add">{{count}}</div>
+    //3.使用组件
+    <CompName></CompName>
+</div>
+<script>
+//1.创建组件
+const Comp=Vue.extend({
+    template:`
+        <div>我是子组件{name}}</div>
+    `,
+    data(){
+        return {
+            name:'subComp'
+        }
+    },
+    methods(){
+
+    }
+})
+//2.1.注册全局组件
+Vue.component('CompName',Comp);
+
+const app=new Vue({
+    el:'#app',
+    //2.2.创建局部组件
+    components:{CompName:Comp}
+    data:{
+        count:0
+    },
+    methods(){
+        add()
+    }
+})
+</script>
+```
+
+疑问：在组件中，为什么data必须是一个函数，返回值为一个对象？
+解答：在组件的复用的时候，每复用一次，就会调用data函数，以保证每个组件中的data是独立的
+
+> 组件的通信问题
+
+1.父组件向子组件通信，通过子组件的props属性
+2.子组件向父组件通信， 
