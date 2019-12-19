@@ -7,13 +7,74 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app">{{messgae}}</div>
+    <div id="app">
+        app:
+        <p><input type="text" v-model="num">{{num}}</p>
+        <p>comp:<comp :prop1="num" @hhh="bian"></comp></p>
+        <p>comp1:<comp1 :prop_1="num" ></comp1></p>
+    </div>
+
+    ---------------------------
+    <comp id="comp">
+        <div>
+            <input type="text" v-model="number1" @input="change()">{{number1}}-{{prop1}}
+        </div>
+    </comp>
+    <comp1 id="comp1">
+            <div>
+                <input type="text" @hhh="bian" v-model="number_1" >{{number_1}}
+            </div>
+    </comp1>
     <script type="text/javascript" src="../source/vue.js"></script>
     <script>
         const app=new Vue({
+            name:'app',
             el:'#app',
             data:{
-                messgae:'Hello World'
+                messgae:'Hello World',
+                num:'qweqwe'
+            },
+            mounted(){
+                console.log(this)
+            },
+            components:{
+                comp:{
+                    name:'comp',
+                    template:'#comp',
+                    props:['prop1'],
+                    data(){
+                        return{
+                            number1:this.prop1
+                        }
+                    },
+                    computed:{
+                        
+                    },
+                    methods:{
+                        change(e){
+                            console.log(this.number1)
+                            console.log(this)
+                            this.$emit('hhh',this.number1)
+                        }
+                    }
+                },
+                comp1:{
+                    name:'comp1',
+                    template:'#comp1',
+                    props:['prop_1'],
+                    data(){
+                        return{
+                            number_1:this.prop_1
+                        }
+                    },
+                    methods:{
+                        bian(value){
+                            value=parseInt(value)
+                            console.log(value,"Comp_1")
+                            this.number_1=value;
+                        },
+                    }
+                }
             }
         })
         

@@ -86,4 +86,15 @@ const app=new Vue({
 > 组件的通信问题
 
 1.父组件向子组件通信，通过子组件的props属性
-2.子组件向父组件通信， 
+2.子组件向父组件通信，通过事件触发函数
+```
+定义一个Vue实例，作为事件总线
+const Event=new Vue();
+
+触发事件
+Event.$emit('ToComp',arg1)
+监听事件
+Event.$on('ToComp',function(arg1 ){
+
+})
+```
