@@ -1,4 +1,4 @@
-2020年2月26日
+2020年2月27日
 
 1.单例模式
 public class SingleObject {
@@ -18,4 +18,6 @@ public class SingleObject {
       System.out.println("Hello World!");
    }
 }
+2020年2月28日
 
+2.工厂模式
