@@ -1,23 +1,34 @@
-2020年2月27日
+> ### 创建型
 
-1.单例模式
-public class SingleObject {
- 
-   //创建 SingleObject 的一个对象
-   private static SingleObject instance = new SingleObject();
- 
-   //让构造函数为 private，这样该类就不会被实例化
-   private SingleObject(){}
- 
-   //获取唯一可用的对象
-   public static SingleObject getInstance(){
-      return instance;
-   }
- 
-   public void showMessage(){
-      System.out.println("Hello World!");
-   }
-}
-2020年2月28日
+1. 单例模式
+2. 工厂模式
+3. 抽象工厂模式
+4. 建造者模式
+5. 原型模式
 
-2.工厂模式
+> ### 结构型
+
+1. 适配器模式
+2. 桥接模式
+3. 过滤器模式
+4. 组合模式
+5. 装饰器模式
+6. 外观模式
+7. 享元模式
+8. 代理模式
+
+> ### 结构型
+
+1. 责任链模式
+2. 命令模式
+3. 解释器模式
+4. 迭代器模式
+5. 中介者模式
+6. 备忘录模式
+7. 观察者模式
+8. 状态模式
+9. 空对象模式
+10. 策略模式
+11. 模板模式
+12. 访问者模式
+

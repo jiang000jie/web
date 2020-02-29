@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack --config webpack.config.js",
-    "dev":"webpack-dev-server"
+    "dev": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "style-loader": "^1.1.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
