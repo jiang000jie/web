@@ -20,7 +20,7 @@ function bubbleSort(arr) {
 
 
 // 2020年2月28日
-// 1.选择排序
+// 2.选择排序
 // 时间复杂度：O(n^2)
 // 空间复杂度：O(1)
 function selectionSort(arr) {
@@ -29,7 +29,7 @@ function selectionSort(arr) {
     for (var i = 0; i < len - 1; i++) {
         minIndex=i;
         for (var j = i+1; j < len; j++) {
-            if (arr[i]>arr[j]) 
+            if (arr[minIndex]>arr[j]) 
                 minIndex=j;
         }
         temp = arr[i];        // 元素交换
@@ -38,9 +38,28 @@ function selectionSort(arr) {
     }
     return arr;
 }
-console.log(selectionSort([9,8,7,6,5,4,3,2,1]))
-// 9 8 7 6 5 4 3 2 1
-// 1 8 7 6 5 4 3 2 9
-// 1 2 7 6 5 4 3 8 9
-// 1 2 3 6 5 4 7 8 9
-// 1 2 3 4 5 6 7 8 9
+
+
+
+// 2020年3月2日
+// 3.插入排序
+// 时间复杂度：O(n^2)
+// 空间复杂度：O(1)
+function insertionSort(arr) {
+    let len = arr.length;
+    let current,preIndex;
+    for (var i = 1; i < len; i++) {
+        preIndex=i-1;
+        current=arr[i];
+        while(preIndex>=0&&current<arr[preIndex]){
+            arr[preIndex+1]=arr[preIndex];
+            preIndex--;
+        }
+        arr[preIndex+1]=current;
+    }
+    return arr;
+}
+console.log(insertionSort([9,8,7,6,5,4,3,2,1]))
+
+
+897654321

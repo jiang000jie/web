@@ -99,7 +99,8 @@ let HtmlWebpackPlugin=require('html-webpack-plugin')
 
 new HtmlWebpackPlugin({        
     template:'',
-    filename:'index.html'
+    filename:'index.html',
+    inject:'body'
 })
 ```
 
@@ -208,6 +209,7 @@ module.exports={
 ### 抽取公共代码
 
 module.exports={
+    
     optimization:{
         splitChunks:{
             cacheGroups:{

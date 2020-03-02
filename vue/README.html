@@ -69,7 +69,7 @@ Vue.component('CompName',Comp);
 const app=new Vue({
     el:'#app',
     //2.2.创建局部组件
-    components:{CompName:Comp}
+    components:{CompName:Comp},
     data:{
         count:0
     },
@@ -98,3 +98,15 @@ Event.$on('ToComp',function(arg1 ){
 
 })
 ```
+
+. v-for 中的 key值
+. v-model的实现原理及其如何自定义
+. v-html会导致哪些问题
+. 父子组件的渲染顺序
+. 父子组件之间的通信问题
+. 双向绑定原理
+. MVVM
+
+
+. AST
+. 虚拟DOM

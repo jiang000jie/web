@@ -13,6 +13,9 @@ let arr1:number[]=[1,1,3,4];
 //数组_2
 let arr2:Array<string>=['1','2','he'];
 
+//只读的数组
+let arr3:ReadonlyArray<number>=[1,2,3,4,8,6];
+
 //元组
 let tuple:[number,string]=[1,'3']
 
