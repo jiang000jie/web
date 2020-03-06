@@ -1,3 +1,5 @@
+// 2020.03.02
+
 //类的创建
 class Person{
     name:string;
@@ -14,7 +16,7 @@ class Person{
 
 class Student extends Person{
     contructor(name:string){
-        super('name');
+        super();
     }
 }
 

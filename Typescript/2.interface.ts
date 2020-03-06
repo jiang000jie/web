@@ -1,3 +1,6 @@
+// 2020年2月28日
+
+
 //接口的定义及其使用
 interface Lable{
     readonly label:string;//只读属性，只在初始化时可以赋值

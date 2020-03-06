@@ -1,0 +1,74 @@
+<!-- 2020.03.04 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="root">
+		<div>sd</div>
+		<div><br>asf</div>
+		<div>sdg</div>
+	</div>
+</body>
+</html>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	#root{
+		background-color: #aaa;
+		height: 500px;
+	}
+	#root div{
+		margin: 10px;
+		height: 100px;
+		width: 200px;
+	}
+	#root div:nth-child(odd){
+		background-color: red;
+	}
+	#root div:nth-child(even){
+		background-color: blue;
+	}
+	#root{
+		display: grid;
+
+		/*是否换行*/
+		/*flex-wrap: nowrap | wrap | wrap-reverse;*/
+
+		/*flex-flow属性是flex-direction属性和flex-wrap属性的简写形式*/
+		/*flex-flow: row || nowrap;*/
+
+		/*justify-content属性定义了项目在主轴上的对齐方式。*/
+		/*justify-content: flex-start | flex-end | center | space-between | space-around;*/
+
+		/*align-items属性定义项目在交叉轴上如何对齐。*/
+		/*align-items: flex-start | flex-end | center | baseline | stretch;*/
+	}
+	
+</style>
+
+<style>
+	/*
+		容器的属性:
+			grid-template-columns: [<每一列的宽度>] | repeat(count,value);
+			grid-template-rows: [<每一行的宽度>];
+
+				grid-template-columns: 100px 100px 100px;			三列都是100px的宽度
+				grid-template-columns: 33.33% 33.33% 33.33%;		三列都是33.33%的宽度
+				grid-template-columns: repeat(3, 33.33%);			三列都是33.33%的宽度(用repeat函数)
+				grid-template-columns: repeat(auto-fill, 100px);	每一列都是100px的宽度，一行不够就换到下行;
+				grid-template-columns: 1fr 2fr;						fr(fraction,片段),1:2进行填充
+
+		项目的属性
+			order: <integer>;
+			flex-grow: <number>;  default 0 
+			flex-shrink: <number>;  default 1 
+			flex-basis: <length> | auto;  default auto 
+			flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+			align-self: auto | flex-start | flex-end | center | baseline | stretch;
+	*/
+</style>
