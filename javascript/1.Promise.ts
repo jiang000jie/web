@@ -1,3 +1,13 @@
+// 2020.03.06
+/*
+
+Promise
+
+常用API:resolve,reject,then,catch,all,race
+
+*/
+
+
 function promise(excute){
         let self = this;
         let STATUE={
