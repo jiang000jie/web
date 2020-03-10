@@ -6,8 +6,9 @@
 . flex
 . grid
 . CSS选择器
-
+. CSS过渡
 . CSS动画
+
 . CSS3
 . BFC
 . 伪类和伪元素

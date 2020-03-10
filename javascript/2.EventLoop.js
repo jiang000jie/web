@@ -18,6 +18,9 @@
     UI渲染
 微任务
     Promise
+    process.nextTick
+    Async/Await(实际就是promise)
+    MutationObserver(html5新特性)
 */
 console.log(1);
 setTimeout(function(){
